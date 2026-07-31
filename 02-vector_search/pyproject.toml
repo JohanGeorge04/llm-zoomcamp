@@ -1,0 +1,33 @@
+[project]
+name = "llm-zoomcamp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Johan Joseph George", email = "125449686+JohanGeorge04@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "minsearch>=0.2.0",
+    "openai>=2.50.0",
+    "psycopg[binary]>=3.3.4",
+    "python-dotenv>=1.2.2",
+    "requests>=2.28.1",
+    "sentence-transformers>=5.6.1",
+    "sqlitesearch>=0.3.0",
+]
+
+[project.scripts]
+llm-zoomcamp = "llm_zoomcamp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
