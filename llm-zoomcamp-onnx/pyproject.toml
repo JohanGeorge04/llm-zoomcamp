@@ -12,6 +12,10 @@ dependencies = [
     "minsearch>=0.2.0",
     "numpy>=2.4.4",
     "onnxruntime==1.28.0",
+    "openai>=3.23.0",
+    "pandas>=3.0.5",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
     "tokenizers>=0.23.1",
     "tqdm>=4.66.5",
 ]
